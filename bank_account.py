@@ -37,6 +37,7 @@ class Bank_account:
 marlie_account = Bank_account("Marlie Gibson", "01234567")
 malia_account = Bank_account("Malia Barker", "28374659")
 dog_account = Bank_account("Sydney Barkerson", "80808080")
+mitchell_account = Bank_account("Mitchell Hudson", "3141592")
 
 print(marlie_account.balance)
 print(marlie_account.deposit(100))
@@ -60,5 +61,13 @@ print(dog_account.deposit(2000))
 print(dog_account.add_interest())
 print(dog_account.get_balance())
 print(dog_account.print_statement())
+
+print('--------------------------------------')
+print(mitchell_account.deposit(400000))
+print(mitchell_account.print_statement())
+print(mitchell_account.add_interest())
+print(mitchell_account.print_statement())
+print(mitchell_account.withdraw(150))
+print(mitchell_account.print_statement())
 
 
