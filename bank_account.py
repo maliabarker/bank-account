@@ -1,8 +1,8 @@
 class Bank_account:
-    def __init__(self, full_name, account_number, total_balance):
+    def __init__(self, full_name, account_number):
         self.name = full_name
         self.account = account_number
-        self.balance = total_balance #should start at 0, do I make this =0?
+        self.balance = 0 #should start at 0, do I make this =0?
 
     def deposit(self, amount):
         new_balance = amount + self.balance
@@ -33,4 +33,29 @@ class Bank_account:
         sliced = slice(4, 8)
         ending_numbers = self.account[sliced]
         return f' {self.name} \n Account No.: ****{ending_numbers} \n Balance: ${self.balance}'
+
+marlie_account = Bank_account("Marlie Gibson", "01234567")
+malia_account = Bank_account("Malia Barker", "28374659")
+dog_account = Bank_account("Sydney Barkerson", "80808080")
+
+print(marlie_account.balance)
+print(marlie_account.deposit(100))
+print(marlie_account.withdraw(20))
+print(marlie_account.balance)
+
+print('--------------------------------------')
+
+print(malia_account.balance)
+print(malia_account.deposit(20))
+print(malia_account.withdraw(30))
+print(malia_account.get_balance())
+print(malia_account.deposit(50))
+
+print('--------------------------------------')
+
+print(dog_account.get_balance())
+print(dog_account.deposit(2000))
+print(dog_account.add_interest())
+print(dog_account.get_balance())
+
 
