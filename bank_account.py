@@ -42,6 +42,7 @@ print(marlie_account.balance)
 print(marlie_account.deposit(100))
 print(marlie_account.withdraw(20))
 print(marlie_account.balance)
+print(marlie_account.print_statement())
 
 print('--------------------------------------')
 
@@ -50,6 +51,7 @@ print(malia_account.deposit(20))
 print(malia_account.withdraw(30))
 print(malia_account.get_balance())
 print(malia_account.deposit(50))
+print(malia_account.print_statement())
 
 print('--------------------------------------')
 
@@ -57,5 +59,6 @@ print(dog_account.get_balance())
 print(dog_account.deposit(2000))
 print(dog_account.add_interest())
 print(dog_account.get_balance())
+print(dog_account.print_statement())
 
 
